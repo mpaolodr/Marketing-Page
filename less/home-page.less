@@ -1,0 +1,35 @@
+main {
+  width: 100%;
+  height: 80vh;
+  .displayFlex(space-between);
+
+  .hero-area {
+    width: 60%;
+  }
+
+  .cta-area {
+    width: 40%;
+    padding: 3%;
+
+    .banner-header {
+      margin: 10% 0 15% 0;
+      color: @banner-header;
+    }
+
+    .banner-desc {
+      margin-bottom: 20%;
+    }
+
+    .cta-btn-container {
+      font-size: 1.6rem;
+      button {
+        .btn();
+      }
+
+      a {
+        color: @cardinal;
+        font-size: 1.6rem;
+      }
+    } //cta-btn-container ends here
+  } //cta-area ends here
+} //main ends here
