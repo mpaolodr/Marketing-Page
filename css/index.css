@@ -229,16 +229,16 @@ main {
     justify-content: flex-end;
     flex-direction: column-reverse;
     align-items: center;
-    border: 2px solid green;
+    padding: 5%;
+  }
+}
+@media (max-width: 375px) {
+  main .desktop {
+    display: none;
   }
 }
 main .hero-area {
   width: 60%;
-}
-@media (max-width: 375px) {
-  main .hero-area {
-    display: none;
-  }
 }
 main .hero-area .hero-img-container {
   background: url("../assets/hero-img.jpg") no-repeat center;
@@ -249,56 +249,17 @@ main .cta-area {
   width: 40%;
   padding: 3%;
 }
-@media (max-width: 375px) {
-  main .cta-area {
-    width: 100%;
-    height: 100%;
-    padding: 5%;
-    border: 2px solid black;
-  }
-}
 main .cta-area .banner-header {
   margin: 10% 0 15% 0;
   color: #d32323;
 }
-@media (max-width: 375px) {
-  main .cta-area .banner-header h2 {
-    font-size: 2.4rem;
-    line-height: 3rem;
-  }
-}
 main .cta-area .banner-desc {
   margin-bottom: 20%;
 }
-@media (max-width: 375px) {
-  main .cta-area .banner-desc {
-    display: none;
-  }
-}
-main .cta-area .hero-area-mobile {
-  display: none;
-}
-@media (max-width: 375px) {
-  main .cta-area .hero-area-mobile {
-    display: block;
-  }
-}
-main .cta-area .hero-area-mobile .mobile-hero-img-container {
-  background: url("../assets/hero-img.jpg") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 320px;
-  margin-bottom: 70px;
-}
 main .cta-area .cta-btn-container {
+  line-height: 2rem;
   font-size: 1.6rem;
   color: #d32323;
-}
-@media (max-width: 375px) {
-  main .cta-area .cta-btn-container {
-    width: 100%;
-    border: 2px solid green;
-  }
 }
 main .cta-area .cta-btn-container button {
   width: 100%;
@@ -315,4 +276,53 @@ main .cta-area .cta-btn-container button {
 main .cta-area .cta-btn-container a {
   color: #d32323;
   font-size: 1.6rem;
+}
+main .mobile-content {
+  display: none;
+}
+@media (max-width: 375px) {
+  main .mobile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+main .mobile-content .mobile-header h5 {
+  color: #d32323;
+  margin-bottom: 8px;
+}
+main .mobile-content .mobile-banner {
+  width: 100%;
+  height: 320px;
+}
+main .mobile-content .mobile-banner .mobile-banner-img {
+  height: 100%;
+  background: url("../assets/hero-img.jpg") no-repeat center;
+  background-size: cover;
+}
+main .mobile-content .mobile-cta-container {
+  width: 100%;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  color: #d32323;
+}
+main .mobile-content .mobile-cta-container button {
+  width: 100%;
+  background-color: #d32323;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-bottom: 16px;
+}
+main .mobile-content .mobile-cta-container a {
+  color: #d32323;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }

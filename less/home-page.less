@@ -8,15 +8,17 @@ main {
     justify-content: flex-end;
     flex-direction: column-reverse;
     align-items: center;
-    border: 2px solid green;
+    padding: 5%;
+  }
+
+  .desktop {
+    @media @mobile {
+      display: none;
+    }
   }
 
   .hero-area {
     width: 60%;
-
-    @media @mobile {
-      display: none;
-    } //hide my hero area for mobile view and created another div inside cta-area
 
     .hero-img-container {
       background: url("../assets/hero-img.jpg") no-repeat center;
@@ -29,57 +31,20 @@ main {
     width: 40%;
     padding: 3%;
 
-    @media @mobile {
-      width: 100%;
-      height: 100%;
-      padding: 5%;
-      border: 2px solid black;
-    }
-
     .banner-header {
       margin: 10% 0 15% 0;
       color: @banner-header;
-
-      h2 {
-        @media @mobile {
-          font-size: 2.4rem;
-          line-height: 3rem;
-        }
-      } //end of h2
     } //end of banner header
 
     .banner-desc {
       margin-bottom: 20%;
-
-      @media @mobile {
-        display: none;
-      }
-    }
-
-    .hero-area-mobile {
-      display: none;
-
-      @media @mobile {
-        display: block;
-      }
-
-      .mobile-hero-img-container {
-        background: url("../assets/hero-img.jpg") no-repeat center;
-        background-size: cover;
-        width: 100%;
-        height: 320px;
-        margin-bottom: 70px;
-      }
     }
 
     .cta-btn-container {
+      line-height: 2rem;
       font-size: 1.6rem;
       color: @cardinal;
 
-      @media @mobile {
-        width: 100%;
-        border: 2px solid green;
-      }
       button {
         .btn();
       }
@@ -88,6 +53,52 @@ main {
         color: @cardinal;
         font-size: 1.6rem;
       }
-    } //cta-btn-container ends here
-  } //cta-area ends here
+    } //cta-btn-container for desktop ends here
+  } //cta-area for desktop ends here
+
+  .mobile-content {
+    display: none;
+
+    @media @mobile {
+      .displayFlex(space-between, center);
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mobile-header {
+      h5 {
+        color: @banner-header;
+        margin-bottom: 8px;
+      }
+    } //mobile-header ends
+
+    .mobile-banner {
+      width: 100%;
+      height: 320px;
+
+      .mobile-banner-img {
+        height: 100%;
+        background: url("../assets/hero-img.jpg") no-repeat center;
+        background-size: cover;
+      }
+    } // mobile-banner ends here
+
+    .mobile-cta-container {
+      width: 100%;
+      line-height: 2rem;
+      font-size: 1.6rem;
+      color: @cardinal;
+
+      button {
+        .btn();
+      }
+
+      a {
+        color: @cardinal;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+  } //mobile-content ends here
 } //main ends here
