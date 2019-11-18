@@ -172,7 +172,7 @@ h6 {
 }
 header {
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   background: #d32323;
   color: #fff;
   grid-column: span 2;
@@ -215,6 +215,7 @@ main .cta-area .banner-desc {
 }
 main .cta-area .cta-btn-container {
   font-size: 1.6rem;
+  color: #d32323;
 }
 main .cta-area .cta-btn-container button {
   width: 100%;
