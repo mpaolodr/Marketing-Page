@@ -1,0 +1,25 @@
+//display
+
+.displayFlex(@main, @cross: stretch) {
+  display: flex;
+  justify-content: @main;
+  align-items: @cross;
+}
+
+.displayGrid(@col: repeat(auto-fit, minmax(300px, 1fr)), @row: 10vh 90vh) {
+  display: grid;
+  grid-template-columns: @col;
+  grid-template-rows: @row;
+}
+
+//btn
+
+.btn(@width: 80%, @bg-color: @cta-bg, @color: @white, @size: 2.4rem) {
+  width: @width;
+  background-color: @bg-color;
+  font-size: @size;
+  color: @white;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: bold;
+}
