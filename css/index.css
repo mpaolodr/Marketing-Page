@@ -175,20 +175,29 @@ header {
   min-height: 10vh;
   background: #d32323;
   color: #fff;
-  grid-column: span 2;
   padding: 0 1.67%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .burger {
-  display: none;
+@media (max-width: 375px) {
+  header {
+    padding: 5%;
+  }
 }
-header .burger div {
-  background-color: #fff;
-  width: 18px;
-  height: 2px;
-  margin: 3px;
+@media (max-width: 375px) {
+  header .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+  }
+}
+@media (max-width: 375px) {
+  header .logo-container h4 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
 }
 header nav {
   min-width: 306px;
@@ -197,25 +206,20 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 375px) {
+  header nav {
+    display: none;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #fff;
 }
-header .search-icon-container {
-  display: none;
-}
-header .search-icon-container p {
-  font-size: 1.8rem;
-  color: #dadada;
-}
-header .dots {
-  display: none;
-}
-header .dots div {
-  background-color: #dadada;
-  width: 4px;
-  height: 4px;
-  margin: 4px;
+@media (max-width: 375px) {
+  header nav a {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
 }
 main {
   width: 100%;
@@ -272,6 +276,7 @@ main .cta-area .cta-btn-container button {
   border-radius: 10px;
   padding: 10px 0;
   margin-bottom: 16px;
+  outline: none;
 }
 main .cta-area .cta-btn-container a {
   color: #d32323;
@@ -293,6 +298,7 @@ main .mobile-content {
 main .mobile-content .mobile-header h5 {
   color: #d32323;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 main .mobile-content .mobile-banner {
   width: 100%;
@@ -308,6 +314,7 @@ main .mobile-content .mobile-cta-container {
   line-height: 2rem;
   font-size: 1.6rem;
   color: #d32323;
+  margin-bottom: 30px;
 }
 main .mobile-content .mobile-cta-container button {
   width: 100%;
@@ -320,6 +327,7 @@ main .mobile-content .mobile-cta-container button {
   border-radius: 10px;
   padding: 10px 0;
   margin-bottom: 16px;
+  outline: none;
 }
 main .mobile-content .mobile-cta-container a {
   color: #d32323;
