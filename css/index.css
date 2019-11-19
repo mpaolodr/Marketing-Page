@@ -252,6 +252,8 @@ main .hero-area .hero-img-container {
 main .cta-area {
   width: 40%;
   padding: 3%;
+  border: 2px solid black;
+  overflow-y: scroll;
 }
 main .cta-area .banner-header {
   margin: 10% 0 15% 0;
