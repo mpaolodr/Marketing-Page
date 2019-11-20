@@ -382,16 +382,16 @@ header nav a {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  width: 100%;
 }
 .main-about-page .team-members .gallery .team-members-info {
   width: 48%;
   background: #fff;
   margin-bottom: 6%;
-  max-width: 500px;
+  max-width: 400px;
+  height: 400px;
 }
 .main-about-page .team-members .gallery .icons-container {
-  margin: 2% 0 4%;
+  margin: 18.4px 0 28px;
 }
 .main-about-page .team-members .gallery .icons-container a {
   font-size: 3em;
@@ -400,12 +400,13 @@ header nav a {
 }
 .main-about-page .team-members .img-container {
   background: #c4c4c4;
-  height: 300px;
+  height: 60%;
   width: 100%;
 }
 .main-about-page .team-members .img-container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .main-about-page .team-members .team-members-info-container {
   padding: 2%;
@@ -440,12 +441,13 @@ header nav a {
 }
 .main-about-page .about-foodie .about-foodie-img-container {
   width: 100%;
-  height: 700px;
+  height: 600px;
   margin-bottom: 7%;
 }
 .main-about-page .about-foodie .about-foodie-img-container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .main-about-page .about-foodie .smaller-container {
   height: 36%;
