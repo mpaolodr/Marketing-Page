@@ -353,88 +353,81 @@ header nav a {
   line-height: 2rem;
 }
 .main-about-page {
-  border: 2px solid black;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 .main-about-page .team {
-  width: 60%;
-  border: 2px solid green;
+  width: 65%;
   background: url("../assets/hero-img.jpg") no-repeat center;
   background-size: cover;
   padding: 1.5%;
 }
 .main-about-page .team h1 {
-  border: 2px solid red;
   margin: 1.5% 0;
   text-align: right;
   color: #d32323;
 }
 .main-about-page .team-members {
-  border: 5px solid blue;
-  width: 90%;
+  width: 85%;
   height: auto;
-}
-.main-about-page .team-members .team-members-title {
-  border: 2px solid white;
 }
 .main-about-page .team-members .team-members-title h2 {
   color: #d32323;
-  margin: 1.5% 0;
+  margin: 40px 0;
 }
 .main-about-page .team-members .gallery {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  border: 3px solid white;
   width: 100%;
 }
 .main-about-page .team-members .gallery .team-members-info {
-  border: 2px solid orange;
   width: 48%;
   background: #fff;
   margin-bottom: 6%;
+  max-width: 500px;
 }
-.main-about-page .team-members .gallery .img-container {
+.main-about-page .team-members .gallery .icons-container {
+  margin: 2% 0 4%;
+}
+.main-about-page .team-members .gallery .icons-container a {
+  font-size: 3em;
+  color: #000;
+  margin-right: 2%;
+}
+.main-about-page .team-members .img-container {
   background: #c4c4c4;
-  height: 250px;
+  height: 300px;
+  width: 100%;
 }
-.main-about-page .team-members .gallery .team-members-info-container {
+.main-about-page .team-members .img-container img {
+  width: 100%;
+  height: 100%;
+}
+.main-about-page .team-members .team-members-info-container {
   padding: 2%;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
 }
-.main-about-page .team-members .gallery .team-members-info-container h5 {
+.main-about-page .team-members .team-members-info-container h5 {
   color: #d32323;
   font-weight: bold;
 }
-.main-about-page .team-members .gallery .team-members-info-container h6 {
+.main-about-page .team-members .team-members-info-container h6 {
   margin: 1% 0 2% 0;
   font-weight: normal;
 }
-.main-about-page .team-members .gallery .icons-container {
-  width: 36%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2% 0 4% 0;
-}
-.main-about-page .team-members .gallery .icons-container a {
-  font-size: 3em;
-  color: black;
-}
 .main-about-page .about-foodie {
-  width: 40%;
-  padding: 9.5% 1.5% 1.5%;
-  border: 5px solid blue;
+  width: 35%;
+  padding: 160px 24px 80px;
+  overflow: hidden;
 }
 .main-about-page .about-foodie .about-foodie-title {
-  border: 2px solid red;
   margin-bottom: 3%;
   color: #d32323;
   width: 55%;
@@ -444,21 +437,15 @@ header nav a {
 }
 .main-about-page .about-foodie .about-foodie-container {
   margin-bottom: 8%;
-  border: 2px solid green;
-  height: 50%;
 }
 .main-about-page .about-foodie .about-foodie-img-container {
-  border: 2px solid red;
   width: 100%;
-  height: 79%;
+  height: 700px;
   margin-bottom: 7%;
 }
 .main-about-page .about-foodie .about-foodie-img-container img {
   width: 100%;
   height: 100%;
-}
-.main-about-page .about-foodie .about-foodie-description {
-  border: 2px solid black;
 }
 .main-about-page .about-foodie .smaller-container {
   height: 36%;
@@ -466,8 +453,9 @@ header nav a {
   justify-content: space-evenly;
   align-items: stretch;
   flex-direction: column-reverse;
+  margin-bottom: 0;
 }
 .main-about-page .about-foodie .smaller-container .about-foodie-img-container {
   height: 60%;
-  margin-top: 2%;
+  margin-top: 8%;
 }
