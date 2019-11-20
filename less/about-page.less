@@ -1,25 +1,86 @@
 .main-about-page {
   border: 2px solid black;
   width: 100%;
-  height: 90vh;
+  //   height: 90vh;
   .displayFlex(space-between);
 
   .team {
     width: 60%;
-    height: 100%;
-    border: 5px solid green;
+    // height: 100%;
+    border: 2px solid green;
+    background: url("../assets/hero-img.jpg") no-repeat center;
+    background-size: cover;
+    padding: 1.5%;
+    // overflow-y: scroll;
 
     h2 {
       border: 2px solid red;
+      margin: 1.5% 0;
+      text-align: right;
+      color: @banner-header;
     }
   } //team ends here
 
   .team-members {
     border: 5px solid blue;
+    width: 90%;
+    height: auto;
 
-    .team-members-info {
-      border: 2px solid orange;
+    .team-members-title {
+      border: 2px solid white;
+
+      h3 {
+        color: @title;
+        margin: 1.5% 0;
+      }
     }
+
+    .gallery {
+      .displayFlex(space-between);
+      flex-wrap: wrap;
+      border: 3px solid white;
+      width: 100%;
+
+      .team-members-info {
+        border: 2px solid orange;
+        width: 48%;
+        background: @gallery-bg;
+        // height: 350px;
+        margin-bottom: 4%;
+      }
+
+      .img-container {
+        background: @img-bg;
+        height: 250px;
+      }
+
+      .team-members-info-container {
+        padding: 2%;
+        .displayFlex(space-between);
+        flex-direction: column;
+
+        h5 {
+          color: @team-name;
+          font-weight: bold;
+        }
+
+        h6 {
+          margin: 1% 0 2% 0;
+          font-weight: normal;
+        }
+      }
+
+      .icons-container {
+        width: 36%;
+        .displayFlex(space-between, center);
+        margin: 2% 0 4% 0;
+
+        a {
+          font-size: 3em;
+          color: black;
+        }
+      }
+    } // gallery ends here
   } //.team members ends here. Had to remove it under .team because I'll go over the kimit of four levels deep
 
   .about-foodie {

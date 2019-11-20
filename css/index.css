@@ -144,6 +144,12 @@ h2 {
   font-size: 6rem;
   line-height: 7.5rem;
 }
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 6.25rem;
+}
 h4 {
   font-style: normal;
   font-weight: bold;
@@ -343,24 +349,78 @@ header nav a {
 .main-about-page {
   border: 2px solid black;
   width: 100%;
-  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 .main-about-page .team {
   width: 60%;
-  height: 100%;
-  border: 5px solid green;
+  border: 2px solid green;
+  background: url("../assets/hero-img.jpg") no-repeat center;
+  background-size: cover;
+  padding: 1.5%;
 }
 .main-about-page .team h2 {
   border: 2px solid red;
+  margin: 1.5% 0;
+  text-align: right;
+  color: #d32323;
 }
 .main-about-page .team-members {
   border: 5px solid blue;
+  width: 90%;
+  height: auto;
 }
-.main-about-page .team-members .team-members-info {
+.main-about-page .team-members .team-members-title {
+  border: 2px solid white;
+}
+.main-about-page .team-members .team-members-title h3 {
+  color: #d32323;
+  margin: 1.5% 0;
+}
+.main-about-page .team-members .gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  border: 3px solid white;
+  width: 100%;
+}
+.main-about-page .team-members .gallery .team-members-info {
   border: 2px solid orange;
+  width: 48%;
+  background: #fff;
+  margin-bottom: 4%;
+}
+.main-about-page .team-members .gallery .img-container {
+  background: #c4c4c4;
+  height: 250px;
+}
+.main-about-page .team-members .gallery .team-members-info-container {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+.main-about-page .team-members .gallery .team-members-info-container h5 {
+  color: #d32323;
+  font-weight: bold;
+}
+.main-about-page .team-members .gallery .team-members-info-container h6 {
+  margin: 1% 0 2% 0;
+  font-weight: normal;
+}
+.main-about-page .team-members .gallery .icons-container {
+  width: 36%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 0 4% 0;
+}
+.main-about-page .team-members .gallery .icons-container a {
+  font-size: 3em;
+  color: black;
 }
 .main-about-page .about-foodie {
   width: 40%;
