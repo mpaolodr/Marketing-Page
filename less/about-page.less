@@ -16,7 +16,8 @@
     width: 62%;
     background: url("../assets/hero-img.jpg") no-repeat center;
     background-size: cover;
-    padding: 24px 24px 80px;
+    // padding: 24px 24px 80px;
+    padding: 1.22% 2.68% 4.07%;
 
     @media @mobile {
       width: 100%;
@@ -24,20 +25,26 @@
       padding: 0 24px 15px;
     }
 
-    h1 {
-      margin: 1.5% 0;
-      text-align: right;
-      color: @banner-header;
+    .about-banner {
+      .displayFlex(flex-end);
 
-      @media @mobile {
-        display: none;
+      h1 {
+        // margin: 1.5% 0;
+        text-align: right;
+        color: @banner-header;
+        width: 100%;
+
+        @media @mobile {
+          display: none;
+        }
       }
-    }
+    } //about-banner ends here
   } //team ends here
 
   .team-members {
-    width: 85%;
-    height: auto;
+    // width: 85%;
+    width: 76%; //trial
+
     @media @mobile {
       width: 100%;
     }
@@ -45,7 +52,8 @@
     .team-members-title {
       h2 {
         color: @title;
-        margin: 40px 0;
+        // margin: 40px 0;
+        margin: 1.52% 0 2.85%;
 
         @media @mobile {
           margin: 0 0 16px;
@@ -58,13 +66,17 @@
     .gallery {
       .displayFlex(space-between);
       flex-wrap: wrap;
+      // height: 100%;
+      border: 2px solid red;
 
       .team-members-info {
-        width: 48%;
+        width: 49%;
+        min-width: 210px;
         background: @gallery-bg;
         margin-bottom: 6%;
         max-width: 400px;
-        height: 400px;
+        // height: 400px;
+        height: 330px;
 
         @media @mobile {
           width: 100%;
@@ -139,7 +151,10 @@
 
   .about-foodie {
     width: 38%;
-    padding: 160px 24px 80px;
+    // padding: 160px 24px 80px;
+    // padding: 1.22% 2.68% 4.07%;
+    // padding: 8.13% 1.5% 4.07%;
+    padding: 1.22% 1.5% 4.07%;
     overflow: hidden;
 
     .mobile-title {
@@ -160,17 +175,28 @@
       padding: 0 24px 16px 24px;
     }
 
+    .pseudo {
+      height: 5%;
+
+      @media @mobile {
+        display: none;
+      }
+    }
+
     .about-foodie-title {
-      margin-bottom: 5%;
+      // margin-bottom: 5%;
+      margin: 2.52% 0 5.87%;
       color: @title;
-      width: 60%;
+      width: 80%;
+      height: 9.71%;
 
       @media @mobile {
         width: 100%;
       }
 
       h2 {
-        margin-bottom: 8%;
+        // margin-bottom: 8%;
+        margin-bottom: 9.17%;
 
         @media @mobile {
           font-size: 3rem;
@@ -179,6 +205,8 @@
       }
 
       h4 {
+        min-width: 320px;
+
         @media @mobile {
           font-size: 2.1rem;
           line-height: 2.6rem;
@@ -187,7 +215,8 @@
     }
 
     .about-foodie-container {
-      margin-bottom: 10%;
+      margin-bottom: 25%;
+      height: 40.45%;
 
       h6 {
         @media @mobile {
@@ -199,8 +228,9 @@
 
     .about-foodie-img-container {
       width: 100%;
-      height: 600px;
-      margin-bottom: 7%;
+      // height: 600px;
+      height: 75.38%;
+      margin-bottom: 5.03%;
 
       @media @mobile {
         height: 340px;
@@ -214,7 +244,7 @@
     }
 
     .smaller-container {
-      height: 36%;
+      height: 33.28%;
       .displayFlex(space-evenly);
       flex-direction: column-reverse;
       margin-bottom: 0;
@@ -224,8 +254,8 @@
       }
 
       .about-foodie-img-container {
-        height: 60%;
-        margin-top: 8%;
+        height: 58.17%;
+        margin-top: 6.11%;
 
         @media @mobile {
           height: 340px;
