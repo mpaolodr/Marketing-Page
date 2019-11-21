@@ -274,7 +274,7 @@ header nav .home-link {
     padding: 24px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page {
     flex-direction: column;
     height: auto;
@@ -288,7 +288,7 @@ header nav .home-link {
 .main-landing-page .hero-area {
   width: 60%;
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page .hero-area {
     width: 100%;
   }
@@ -298,7 +298,7 @@ header nav .home-link {
   background-size: cover;
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page .hero-area .hero-img-container {
     height: 551px;
     display: flex;
@@ -309,7 +309,7 @@ header nav .home-link {
 .main-landing-page .hero-area .hero-img-container h2 {
   display: none;
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page .hero-area .hero-img-container h2 {
     display: inline-block;
     width: 65%;
@@ -323,7 +323,7 @@ header nav .home-link {
   padding: 3%;
   overflow-y: scroll;
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page .cta-area {
     width: 100%;
     padding: 3% 15%;
@@ -333,7 +333,7 @@ header nav .home-link {
   margin-top: 10%;
   color: #d32323;
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page .cta-area .banner-header {
     display: none;
   }
@@ -341,7 +341,7 @@ header nav .home-link {
 .main-landing-page .cta-area .banner-desc {
   margin-bottom: 10%;
 }
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .main-landing-page .cta-area .banner-desc {
     margin-bottom: 5%;
   }
@@ -470,6 +470,16 @@ header nav .home-link {
     padding: 0 24px 15px;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7.5% 15%;
+  }
+}
 .main-about-page .team .about-banner {
   display: flex;
   justify-content: flex-end;
@@ -485,12 +495,26 @@ header nav .home-link {
     display: none;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team .about-banner h1 {
+    font-size: 6rem;
+    line-height: 7.5rem;
+    margin-bottom: 32px;
+  }
+}
 .main-about-page .team-members {
   width: 76%;
 }
 @media (max-width: 375px) {
   .main-about-page .team-members {
     width: 100%;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members {
+    width: 100%;
+    background: #fff;
+    padding: 4.5%;
   }
 }
 .main-about-page .team-members .team-members-title h2 {
@@ -500,6 +524,12 @@ header nav .home-link {
 @media (max-width: 375px) {
   .main-about-page .team-members .team-members-title h2 {
     margin: 0 0 16px;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .team-members-title h2 {
     font-size: 3rem;
     line-height: 3.8rem;
   }
@@ -525,8 +555,25 @@ header nav .home-link {
     height: 343px;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .gallery .team-members-info {
+    width: 100%;
+    max-width: 100%;
+    height: 255px;
+    border: 0.5px solid #c4c4c4;
+  }
+}
 .main-about-page .team-members .icons-container {
   margin: 18.4px 0 28px;
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .icons-container {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+  }
 }
 .main-about-page .team-members .icons-container a {
   font-size: 3em;
@@ -534,6 +581,11 @@ header nav .home-link {
   margin-right: 2%;
 }
 @media (max-width: 375px) {
+  .main-about-page .team-members .icons-container a {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
   .main-about-page .team-members .icons-container a {
     font-size: 2.4rem;
   }
@@ -563,12 +615,27 @@ header nav .home-link {
   align-items: stretch;
   flex-direction: column;
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .team-members-info-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 0;
+    margin-top: 20px;
+  }
+}
 .main-about-page .team-members .team-members-info-container h5 {
   color: #d32323;
   font-weight: bold;
 }
 @media (max-width: 375px) {
   .main-about-page .team-members .team-members-info-container h5 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .team-members-info-container h5 {
+    width: 25%;
     font-size: 2.1rem;
     line-height: 2.6rem;
   }
@@ -584,10 +651,32 @@ header nav .home-link {
     line-height: 2rem;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .team-members-info-container h6 {
+    width: 45%;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+}
+.main-about-page .team-members .tablet-about-foodie {
+  display: none;
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .team-members .tablet-about-foodie {
+    display: inline-block;
+    width: 100%;
+  }
+}
 .main-about-page .about-foodie {
   width: 38%;
   padding: 1.22% 1.5% 4.07%;
   overflow: hidden;
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .about-foodie {
+    display: none;
+  }
 }
 .main-about-page .about-foodie .mobile-title {
   display: none;
@@ -616,6 +705,11 @@ header nav .home-link {
     display: none;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .about-foodie .pseudo {
+    display: none;
+  }
+}
 .main-about-page .about-foodie .about-foodie-title {
   margin: 2.52% 0 5.87%;
   color: #d32323;
@@ -636,6 +730,12 @@ header nav .home-link {
     line-height: 3.8rem;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .about-foodie .about-foodie-title h2 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+}
 .main-about-page .about-foodie .about-foodie-title h4 {
   min-width: 320px;
 }
@@ -645,11 +745,22 @@ header nav .home-link {
     line-height: 2.6rem;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .about-foodie .about-foodie-title h4 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+}
 .main-about-page .about-foodie .about-foodie-container {
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   height: 40.45%;
 }
 @media (max-width: 375px) {
+  .main-about-page .about-foodie .about-foodie-container {
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
   .main-about-page .about-foodie .about-foodie-container {
     margin-bottom: 5%;
   }
@@ -670,6 +781,11 @@ header nav .home-link {
     height: 340px;
   }
 }
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-about-page .about-foodie .about-foodie-img-container {
+    height: 340px;
+  }
+}
 .main-about-page .about-foodie .about-foodie-img-container img {
   width: 100%;
   height: 100%;
@@ -682,8 +798,14 @@ header nav .home-link {
   align-items: stretch;
   flex-direction: column-reverse;
   margin-bottom: 0;
+  padding-top: 10%;
 }
 @media (max-width: 375px) {
+  .main-about-page .about-foodie .smaller-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
   .main-about-page .about-foodie .smaller-container {
     flex-direction: column;
   }
@@ -693,6 +815,12 @@ header nav .home-link {
   margin-top: 6.11%;
 }
 @media (max-width: 375px) {
+  .main-about-page .about-foodie .smaller-container .about-foodie-img-container {
+    height: 340px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
   .main-about-page .about-foodie .smaller-container .about-foodie-img-container {
     height: 340px;
     margin-top: 0;
