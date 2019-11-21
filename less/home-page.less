@@ -12,6 +12,11 @@
     padding: 24px;
   }
 
+  @media @tablet {
+    flex-direction: column;
+    height: auto;
+  }
+
   .desktop {
     @media @mobile {
       display: none;
@@ -21,10 +26,31 @@
   .hero-area {
     width: 60%;
 
+    @media @tablet {
+      width: 100%;
+    }
+
     .hero-img-container {
-      background: url("../assets/hero-img.jpg") no-repeat center;
+      background: url("../assets/hero-img.jpg") no-repeat center center;
       background-size: cover;
       height: 100%;
+
+      @media @tablet {
+        height: 551px;
+        .displayFlex(center);
+      }
+
+      h2 {
+        display: none;
+
+        @media @tablet {
+          display: inline-block;
+          width: 65%;
+          color: @banner-header;
+          margin-top: 12%;
+          min-width: 280px;
+        }
+      }
     }
   } //hero-area ends here
 
@@ -33,13 +59,26 @@
     padding: 3%;
     overflow-y: scroll; //temporary fix until tablet breakpoint is given
 
+    @media @tablet {
+      width: 100%;
+      padding: 3% 15%;
+    }
+
     .banner-header {
       margin-top: 10%;
       color: @banner-header;
+
+      @media @tablet {
+        display: none;
+      }
     } //end of banner header
 
     .banner-desc {
       margin-bottom: 10%;
+
+      @media @tablet {
+        margin-bottom: 5%;
+      }
     }
 
     .cta-btn-container {
@@ -66,6 +105,7 @@
         color: @cardinal;
         font-size: 2.4rem;
         text-decoration: none;
+        font-weight: normal;
       }
     } //cta-btn-container for desktop ends here
   } //cta-area for desktop ends here
@@ -132,6 +172,7 @@
         color: @cardinal;
         font-size: 2.4rem;
         text-decoration: none;
+        font-weight: normal;
       }
     }
   } //mobile-content ends here

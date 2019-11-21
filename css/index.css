@@ -274,6 +274,12 @@ header nav .home-link {
     padding: 24px;
   }
 }
+@media (max-width: 768px) {
+  .main-landing-page {
+    flex-direction: column;
+    height: auto;
+  }
+}
 @media (max-width: 375px) {
   .main-landing-page .desktop {
     display: none;
@@ -282,22 +288,63 @@ header nav .home-link {
 .main-landing-page .hero-area {
   width: 60%;
 }
+@media (max-width: 768px) {
+  .main-landing-page .hero-area {
+    width: 100%;
+  }
+}
 .main-landing-page .hero-area .hero-img-container {
-  background: url("../assets/hero-img.jpg") no-repeat center;
+  background: url("../assets/hero-img.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .main-landing-page .hero-area .hero-img-container {
+    height: 551px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+.main-landing-page .hero-area .hero-img-container h2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-landing-page .hero-area .hero-img-container h2 {
+    display: inline-block;
+    width: 65%;
+    color: #d32323;
+    margin-top: 12%;
+    min-width: 280px;
+  }
 }
 .main-landing-page .cta-area {
   width: 40%;
   padding: 3%;
   overflow-y: scroll;
 }
+@media (max-width: 768px) {
+  .main-landing-page .cta-area {
+    width: 100%;
+    padding: 3% 15%;
+  }
+}
 .main-landing-page .cta-area .banner-header {
   margin-top: 10%;
   color: #d32323;
 }
+@media (max-width: 768px) {
+  .main-landing-page .cta-area .banner-header {
+    display: none;
+  }
+}
 .main-landing-page .cta-area .banner-desc {
   margin-bottom: 10%;
+}
+@media (max-width: 768px) {
+  .main-landing-page .cta-area .banner-desc {
+    margin-bottom: 5%;
+  }
 }
 .main-landing-page .cta-area .cta-btn-container {
   line-height: 2rem;
@@ -330,6 +377,7 @@ header nav .home-link {
   color: #d32323;
   font-size: 2.4rem;
   text-decoration: none;
+  font-weight: normal;
 }
 .main-landing-page .mobile-content {
   display: none;
@@ -391,6 +439,7 @@ header nav .home-link {
   color: #d32323;
   font-size: 2.4rem;
   text-decoration: none;
+  font-weight: normal;
 }
 /*
   ===========================================================================
@@ -410,7 +459,7 @@ header nav .home-link {
 }
 .main-about-page .team {
   width: 62%;
-  background: url("../assets/hero-img.jpg") no-repeat center;
+  background: url("../assets/abt-bg.png") no-repeat center center;
   background-size: cover;
   padding: 1.22% 2.68% 4.07%;
 }
@@ -460,7 +509,6 @@ header nav .home-link {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  border: 2px solid red;
 }
 .main-about-page .team-members .gallery .team-members-info {
   width: 49%;
@@ -600,6 +648,11 @@ header nav .home-link {
 .main-about-page .about-foodie .about-foodie-container {
   margin-bottom: 25%;
   height: 40.45%;
+}
+@media (max-width: 375px) {
+  .main-about-page .about-foodie .about-foodie-container {
+    margin-bottom: 5%;
+  }
 }
 @media (max-width: 375px) {
   .main-about-page .about-foodie .about-foodie-container h6 {
