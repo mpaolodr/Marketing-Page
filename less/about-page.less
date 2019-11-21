@@ -1,3 +1,9 @@
+/*
+  ===========================================================================
+  ==========================ABOUT PAGE STYLES================================
+  ===========================================================================
+  */
+
 .main-about-page {
   width: 100%;
   .displayFlex(space-between);
@@ -7,7 +13,7 @@
   }
 
   .team {
-    width: 65%;
+    width: 62%;
     background: url("../assets/hero-img.jpg") no-repeat center;
     background-size: cover;
     padding: 24px 24px 80px;
@@ -66,21 +72,29 @@
           height: 343px;
         }
       }
+    } // gallery ends here
 
-      .icons-container {
-        margin: 18.4px 0 28px;
+    .icons-container {
+      margin: 18.4px 0 28px;
 
-        a {
-          font-size: 3em;
-          color: @abt-icons;
-          margin-right: 2%;
+      a {
+        font-size: 3em;
+        color: @abt-icons;
+        margin-right: 2%;
 
-          @media @mobile {
-            font-size: 2.4rem;
-          }
+        @media @mobile {
+          font-size: 2.4rem;
         }
       }
-    } // gallery ends here
+
+      i {
+        z-index: 1;
+        &:hover {
+          cursor: pointer;
+          color: @cardinal;
+        }
+      }
+    }
 
     .img-container {
       background: @img-bg;
@@ -91,6 +105,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: 50% 60%;
       }
     }
 
@@ -123,7 +138,7 @@
   } //.team members ends here. Had to remove it under .team because I'll go over the kimit of four levels deep
 
   .about-foodie {
-    width: 35%;
+    width: 38%;
     padding: 160px 24px 80px;
     overflow: hidden;
 
@@ -161,22 +176,18 @@
           font-size: 3rem;
           line-height: 3.8rem;
         }
+      }
 
-        h4 {
-          @media @mobile {
-            font-size: 2.1rem;
-            line-height: 2.6rem;
-          }
+      h4 {
+        @media @mobile {
+          font-size: 2.1rem;
+          line-height: 2.6rem;
         }
       }
     }
 
     .about-foodie-container {
-      margin-bottom: 20%;
-
-      @media @mobile {
-        margin-bottom: 10%;
-      }
+      margin-bottom: 10%;
 
       h6 {
         @media @mobile {

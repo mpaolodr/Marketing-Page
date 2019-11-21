@@ -220,17 +220,38 @@ header nav {
 }
 @media (max-width: 375px) {
   header nav {
-    display: none;
+    min-width: 0;
   }
 }
 header nav a {
   text-decoration: none;
   color: #fff;
 }
+header nav a:hover {
+  font-weight: 700;
+}
 @media (max-width: 375px) {
   header nav a {
     font-size: 2.1rem;
     line-height: 2.6rem;
+  }
+}
+@media (max-width: 375px) {
+  header nav .about-link {
+    display: inline;
+  }
+}
+header nav .home-link {
+  display: none;
+}
+@media (max-width: 375px) {
+  header nav .home-link {
+    display: inline;
+  }
+}
+@media (max-width: 375px) {
+  header nav .hide {
+    display: none;
   }
 }
 .main-landing-page {
@@ -276,7 +297,7 @@ header nav a {
   color: #d32323;
 }
 .main-landing-page .cta-area .banner-desc {
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 .main-landing-page .cta-area .cta-btn-container {
   line-height: 2rem;
@@ -293,12 +314,22 @@ header nav a {
   font-weight: bold;
   border-radius: 10px;
   padding: 10px 0;
-  margin-bottom: 16px;
+  margin: 16px 0;
   outline: none;
 }
-.main-landing-page .cta-area .cta-btn-container a {
+.main-landing-page .cta-area .cta-btn-container .learn {
+  background: #fff;
+  border: 0.5px solid #d32323;
+  margin-top: 50px;
+}
+.main-landing-page .cta-area .cta-btn-container .login {
   color: #d32323;
   font-size: 1.6rem;
+}
+.main-landing-page .cta-area .cta-btn-container .learn-link {
+  color: #d32323;
+  font-size: 2.4rem;
+  text-decoration: none;
 }
 .main-landing-page .mobile-content {
   display: none;
@@ -344,14 +375,29 @@ header nav a {
   font-weight: bold;
   border-radius: 10px;
   padding: 10px 0;
-  margin-bottom: 16px;
+  margin: 16px 0;
   outline: none;
 }
-.main-landing-page .mobile-content .mobile-cta-container a {
+.main-landing-page .mobile-content .mobile-cta-container .learn {
+  background: #fff;
+  border: 0.5px solid #d32323;
+  margin-top: 50px;
+}
+.main-landing-page .mobile-content .mobile-cta-container .login {
   color: #d32323;
   font-size: 1.6rem;
   line-height: 2rem;
 }
+.main-landing-page .mobile-content .mobile-cta-container .learn-link {
+  color: #d32323;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+/*
+  ===========================================================================
+  ==========================ABOUT PAGE STYLES================================
+  ===========================================================================
+  */
 .main-about-page {
   width: 100%;
   display: flex;
@@ -364,7 +410,7 @@ header nav a {
   }
 }
 .main-about-page .team {
-  width: 65%;
+  width: 62%;
   background: url("../assets/hero-img.jpg") no-repeat center;
   background-size: cover;
   padding: 24px 24px 80px;
@@ -426,18 +472,25 @@ header nav a {
     height: 343px;
   }
 }
-.main-about-page .team-members .gallery .icons-container {
+.main-about-page .team-members .icons-container {
   margin: 18.4px 0 28px;
 }
-.main-about-page .team-members .gallery .icons-container a {
+.main-about-page .team-members .icons-container a {
   font-size: 3em;
   color: #000;
   margin-right: 2%;
 }
 @media (max-width: 375px) {
-  .main-about-page .team-members .gallery .icons-container a {
+  .main-about-page .team-members .icons-container a {
     font-size: 2.4rem;
   }
+}
+.main-about-page .team-members .icons-container i {
+  z-index: 1;
+}
+.main-about-page .team-members .icons-container i:hover {
+  cursor: pointer;
+  color: #d32323;
 }
 .main-about-page .team-members .img-container {
   background: #c4c4c4;
@@ -448,6 +501,7 @@ header nav a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 60%;
 }
 .main-about-page .team-members .team-members-info-container {
   padding: 2%;
@@ -478,7 +532,7 @@ header nav a {
   }
 }
 .main-about-page .about-foodie {
-  width: 35%;
+  width: 38%;
   padding: 160px 24px 80px;
   overflow: hidden;
 }
@@ -521,18 +575,13 @@ header nav a {
   }
 }
 @media (max-width: 375px) {
-  .main-about-page .about-foodie .about-foodie-title h2 h4 {
+  .main-about-page .about-foodie .about-foodie-title h4 {
     font-size: 2.1rem;
     line-height: 2.6rem;
   }
 }
 .main-about-page .about-foodie .about-foodie-container {
-  margin-bottom: 20%;
-}
-@media (max-width: 375px) {
-  .main-about-page .about-foodie .about-foodie-container {
-    margin-bottom: 10%;
-  }
+  margin-bottom: 10%;
 }
 @media (max-width: 375px) {
   .main-about-page .about-foodie .about-foodie-container h6 {
