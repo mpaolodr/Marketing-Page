@@ -65,6 +65,10 @@
       padding: 4.5%;
     }
 
+    @media @special {
+      width: 100%;
+    }
+
     .team-members-title {
       h2 {
         color: @title;
@@ -86,7 +90,10 @@
     .gallery {
       .displayFlex(space-between);
       flex-wrap: wrap;
-      // height: 100%;
+
+      @media @special {
+        width: 100%;
+      }
 
       .team-members-info {
         width: 49%;
@@ -292,15 +299,17 @@
     }
 
     .about-foodie-container {
-      margin-bottom: 20%;
-      height: 40.45%;
-
       @media @mobile {
         margin-bottom: 5%;
       }
 
       @media @tablet {
         margin-bottom: 5%;
+      }
+
+      @media @special {
+        margin-bottom: 10%;
+        height: auto;
       }
 
       h6 {
@@ -336,7 +345,7 @@
       .displayFlex(space-evenly);
       flex-direction: column-reverse;
       margin-bottom: 0;
-      padding-top: 10%;
+      padding-top: 5%;
 
       @media @mobile {
         flex-direction: column;
