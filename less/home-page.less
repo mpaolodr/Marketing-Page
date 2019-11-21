@@ -1,35 +1,177 @@
-main {
+.main-landing-page {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   .displayFlex(space-between);
+
+  //mobile view
+  @media @mobile {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 24px;
+  }
+
+  @media @tablet {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .desktop {
+    @media @mobile {
+      display: none;
+    }
+  }
 
   .hero-area {
     width: 60%;
-  }
+
+    @media @tablet {
+      width: 100%;
+    }
+
+    .hero-img-container {
+      background: url("../assets/hero-img.jpg") no-repeat center center;
+      background-size: cover;
+      height: 100%;
+
+      @media @tablet {
+        height: 551px;
+        .displayFlex(center);
+      }
+
+      h2 {
+        display: none;
+
+        @media @tablet {
+          display: inline-block;
+          width: 65%;
+          color: @banner-header;
+          margin-top: 12%;
+          min-width: 280px;
+        }
+      }
+    }
+  } //hero-area ends here
 
   .cta-area {
     width: 40%;
     padding: 3%;
+    overflow-y: scroll;
 
-    .banner-header {
-      margin: 10% 0 15% 0;
-      color: @banner-header;
+    @media @tablet {
+      width: 100%;
+      padding: 3% 15%;
     }
 
+    .banner-header {
+      margin-top: 10%;
+      color: @banner-header;
+
+      @media @tablet {
+        display: none;
+      }
+    } //end of banner header
+
     .banner-desc {
-      margin-bottom: 20%;
+      margin-bottom: 10%;
+
+      @media @tablet {
+        margin-bottom: 5%;
+      }
     }
 
     .cta-btn-container {
+      line-height: 2rem;
       font-size: 1.6rem;
+      color: @cardinal;
+
       button {
         .btn();
       }
 
-      a {
+      .learn {
+        background: @learn-btn;
+        border: 0.5px solid @cardinal;
+        margin-top: 40px;
+      }
+
+      .login {
         color: @cardinal;
         font-size: 1.6rem;
       }
-    } //cta-btn-container ends here
-  } //cta-area ends here
-} //main ends here
+
+      .learn-link {
+        color: @cardinal;
+        font-size: 2.4rem;
+        text-decoration: none;
+        font-weight: normal;
+      }
+    } //cta-btn-container for desktop ends here
+  } //cta-area for desktop ends here
+
+  /*
+  ===========================================================================
+  ===============MOBILE STYLES FOR CONTENT AREA==============================
+  ===========================================================================
+  */
+
+  .mobile-content {
+    display: none;
+
+    @media @mobile {
+      .displayFlex(space-between, center);
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mobile-header {
+      h5 {
+        color: @banner-header;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+    } //mobile-header ends
+
+    .mobile-banner {
+      width: 100%;
+      height: 320px;
+
+      .mobile-banner-img {
+        height: 100%;
+        background: url("../assets/hero-img.jpg") no-repeat center;
+        background-size: cover;
+      }
+    } // mobile-banner ends here
+
+    .mobile-cta-container {
+      width: 100%;
+      line-height: 2rem;
+      font-size: 1.6rem;
+      color: @cardinal;
+      margin-bottom: 30px;
+
+      button {
+        .btn();
+      }
+
+      .learn {
+        background: @learn-btn;
+        border: 0.5px solid @cardinal;
+      }
+
+      .login {
+        color: @cardinal;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+
+      .learn-link {
+        color: @cardinal;
+        font-size: 2.4rem;
+        text-decoration: none;
+        font-weight: normal;
+      }
+    }
+  } //mobile-content ends here
+} //main-landing-page ends here

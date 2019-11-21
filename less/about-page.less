@@ -1,0 +1,365 @@
+/*
+  ===========================================================================
+  ==========================ABOUT PAGE STYLES================================
+  ===========================================================================
+  */
+
+.main-about-page {
+  width: 100%;
+  .displayFlex(space-between);
+
+  @media @mobile {
+    flex-direction: column-reverse;
+  }
+
+  .team {
+    width: 62%;
+    background: url("../assets/abt-bg.png") no-repeat center center;
+    background-size: cover;
+    padding: 1.22% 2.68% 4.07%;
+
+    @media @mobile {
+      width: 100%;
+      background: none;
+      padding: 0 24px 15px;
+    }
+
+    @media @tablet {
+      width: 100%;
+      .displayFlex(center, center);
+      flex-direction: column;
+      padding: 7.5% 15%;
+    }
+
+    .about-banner {
+      .displayFlex(flex-end);
+
+      h1 {
+        text-align: right;
+        color: @banner-header;
+        width: 100%;
+
+        @media @mobile {
+          display: none;
+        }
+
+        @media @tablet {
+          font-size: 6rem;
+          line-height: 7.5rem;
+          margin-bottom: 32px;
+        }
+      }
+    } //about-banner ends here
+  } //team ends here
+
+  .team-members {
+    width: 76%;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    @media @tablet {
+      width: 100%;
+      background: @gallery-bg;
+      padding: 4.5%;
+    }
+
+    .team-members-title {
+      h2 {
+        color: @title;
+        margin: 1.52% 0 2.85%;
+
+        @media @mobile {
+          margin: 0 0 16px;
+          font-size: 3rem;
+          line-height: 3.8rem;
+        }
+
+        @media @tablet {
+          font-size: 3rem;
+          line-height: 3.8rem;
+        }
+      }
+    }
+
+    .gallery {
+      .displayFlex(space-between);
+      flex-wrap: wrap;
+      // height: 100%;
+
+      .team-members-info {
+        width: 49%;
+        min-width: 210px;
+        background: @gallery-bg;
+        margin-bottom: 6%;
+        max-width: 400px;
+        height: 330px;
+
+        @media @mobile {
+          width: 100%;
+          border: 0.5px solid @team-border;
+          height: 343px;
+        }
+
+        @media @tablet {
+          width: 100%;
+          max-width: 100%;
+          height: 255px;
+          border: 0.5px solid @team-border;
+        }
+      }
+    } // gallery ends here
+
+    .icons-container {
+      margin: 18.4px 0 28px;
+
+      @media @tablet {
+        width: 25%;
+        .displayFlex(space-between, flex-end);
+        margin: 0;
+      }
+
+      a {
+        font-size: 3em;
+        color: @abt-icons;
+        margin-right: 2%;
+
+        @media @mobile {
+          font-size: 2.4rem;
+        }
+
+        @media @tablet {
+          font-size: 2.4rem;
+        }
+      }
+
+      i {
+        z-index: 1;
+        &:hover {
+          cursor: pointer;
+          color: @cardinal;
+        }
+      }
+    }
+
+    .img-container {
+      background: @img-bg;
+      height: 60%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 60%;
+      }
+    }
+
+    .team-members-info-container {
+      padding: 2%;
+      .displayFlex(space-between);
+      flex-direction: column;
+
+      @media @tablet {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 0;
+        margin-top: 20px;
+      }
+
+      h5 {
+        color: @team-name;
+        font-weight: bold;
+
+        @media @mobile {
+          font-size: 2.1rem;
+          line-height: 2.6rem;
+        }
+
+        @media @tablet {
+          width: 25%;
+          font-size: 2.1rem;
+          line-height: 2.6rem;
+        }
+      }
+
+      h6 {
+        color: @team-role;
+        margin: 1% 0 2% 0;
+        font-weight: normal;
+
+        @media @mobile {
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+
+        @media @tablet {
+          width: 45%;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .tablet-about-foodie {
+      display: none;
+
+      @media @tablet {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  } //.team members ends here. Had to remove it under .team because I'll go over the limit of four levels deep
+
+  .about-foodie {
+    width: 38%;
+    padding: 1.22% 1.5% 4.07%;
+    overflow: hidden;
+
+    @media @tablet {
+      display: none;
+    }
+
+    .mobile-title {
+      display: none;
+
+      @media @mobile {
+        display: block;
+        text-align: center;
+        margin: 32px 0;
+        color: @banner-header;
+        font-size: 4.8rem;
+        line-height: 6rem;
+      }
+    }
+
+    @media @mobile {
+      width: 100%;
+      padding: 0 24px 16px 24px;
+    }
+
+    .pseudo {
+      height: 5%;
+
+      @media @mobile {
+        display: none;
+      }
+
+      @media @tablet {
+        display: none;
+      }
+    }
+
+    .about-foodie-title {
+      margin: 2.52% 0 5.87%;
+      color: @title;
+      width: 80%;
+      height: 9.71%;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      h2 {
+        margin-bottom: 9.17%;
+
+        @media @mobile {
+          font-size: 3rem;
+          line-height: 3.8rem;
+        }
+
+        @media @tablet {
+          font-size: 3rem;
+          line-height: 3.8rem;
+        }
+      }
+
+      h4 {
+        min-width: 320px;
+
+        @media @mobile {
+          font-size: 2.1rem;
+          line-height: 2.6rem;
+        }
+
+        @media @tablet {
+          font-size: 2.1rem;
+          line-height: 2.6rem;
+        }
+      }
+    }
+
+    .about-foodie-container {
+      margin-bottom: 20%;
+      height: 40.45%;
+
+      @media @mobile {
+        margin-bottom: 5%;
+      }
+
+      @media @tablet {
+        margin-bottom: 5%;
+      }
+
+      h6 {
+        @media @mobile {
+          font-size: 1.8rem;
+          line-height: 2.3rem;
+        }
+      }
+    }
+
+    .about-foodie-img-container {
+      width: 100%;
+      height: 75.38%;
+      margin-bottom: 5.03%;
+
+      @media @mobile {
+        height: 340px;
+      }
+
+      @media @tablet {
+        height: 340px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .smaller-container {
+      height: 33.28%;
+      .displayFlex(space-evenly);
+      flex-direction: column-reverse;
+      margin-bottom: 0;
+      padding-top: 10%;
+
+      @media @mobile {
+        flex-direction: column;
+      }
+
+      @media @tablet {
+        flex-direction: column;
+      }
+
+      .about-foodie-img-container {
+        height: 58.17%;
+        margin-top: 6.11%;
+
+        @media @mobile {
+          height: 340px;
+          margin-top: 0;
+        }
+
+        @media @tablet {
+          height: 340px;
+          margin-top: 0;
+        }
+      }
+    }
+  } //about-foodie ends here
+} //main-about-page ends here

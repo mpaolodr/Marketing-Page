@@ -1,20 +1,134 @@
 header {
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   background: @nav-bg;
   color: @nav-font;
-  grid-column: span 2;
   padding: 0 1.67%;
   .displayFlex(space-between, center);
+
+  @media @mobile {
+    padding: 5%;
+  }
+
+  .logo-container {
+    @media @mobile {
+      .displayFlex(space-between, center);
+      width: 40%;
+    }
+
+    //   .burger {
+    //     display: none;
+
+    //     @media @mobile {
+    //       display: inline;
+    //     }
+
+    //     div {
+    //       background-color: @white;
+    //       width: 18px;
+    //       height: 2px;
+    //       margin: 3px;
+    //     }
+    //   } //end of burger
+    h4 {
+      @media @mobile {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+      }
+    }
+  } //end of logo container
 
   nav {
     min-width: 306px;
     width: 20%;
     .displayFlex(space-between, center);
 
+    @media @mobile {
+      min-width: 0;
+    }
+
+    // @media @mobile {
+    //   // position: absolute;
+    //   // left: 0px;
+    //   // top: 10vh;
+    //   // height: 90vh;
+    //   // min-width: 200px;
+    //   // width: 10%;
+    //   // background: @nav-bg;
+    //   // justify-content: space-evenly;
+    //   // align-items: center;
+    //   // flex-direction: column;
+    //   // transform: translateX(-100%);
+    //   // transition: transform 0.5s ease-in;
+    //   display: none;
+    // }
+
     a {
       text-decoration: none;
       color: @nav-font;
+
+      &:hover {
+        font-weight: 700;
+      }
+
+      @media @mobile {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+      }
     }
-  }
+
+    .about-link {
+      @media @mobile {
+        display: inline;
+      }
+    }
+
+    .home-link {
+      display: none;
+      @media @mobile {
+        display: inline;
+      }
+    }
+
+    .hide {
+      @media @mobile {
+        display: none;
+      }
+    }
+  } // end of nav
+
+  // .active {
+  //   @media @mobile {
+  //     transform: translateX(0);
+  //   }
+  // }
+
+  // .icons-container {
+  //   display: none;
+
+  //   @media @mobile {
+  //     .displayFlex(space-between, center);
+  //     width: 20%;
+  //   }
+
+  //   p {
+  //     font-size: 1.8rem;
+  //     color: #dadada;
+  //   }
+
+  //   .dots {
+  //     display: none;
+
+  //     @media @mobile {
+  //       display: inline;
+  //     }
+
+  //     div {
+  //       background-color: #dadada;
+  //       width: 4px;
+  //       height: 4px;
+  //       margin: 4px;
+  //     }
+  //   }
+  // } icons container ends here
 } //end of header
