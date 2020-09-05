@@ -30,7 +30,7 @@
 <br/>
 
 - Marketing Page complete but not hooked to main application
-- Not deployed
+- Marketing Page deployed
 
 <br/>
 
